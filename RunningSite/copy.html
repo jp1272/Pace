@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styleHome.css" />
+    <title>Pace</title>
+
+    <script defer src="scriptHome.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+          <img
+          class="nav__logo"
+          src="logo.png"
+          alt="PaceBoard logo"
+          id="logo"
+          designer="JP"
+          data-version-number="3.0"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Our Goal</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Features
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Connect</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Sign up</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1 class="header_words">
+          Connecting
+          <!-- Green highlight effect -->
+          <span class="highlight">athletes</span>
+          of every
+          <span class="highlight">pace</span> <br>
+          <button class="btn--text btn--scroll-to">Learn More &DownArrow;</button>
+        </h1>
+        <h4>Track your progress, connect with others, and reach your goals!</h4>
+      </div>
+    </header>
+
+    <section class="section white--section" id="section--1">
+        <div class="section__title">
+          <h2 class="section__description">Our Goal</h2>
+          <h3 class="section__header">
+            We want to better connect athletes to their coaches, teammates, and other athletes.
+          </h3>
+        </div>
+  
+        <div class="goal">
+          <div class="img__holder">
+            <img
+            src="coaches.jpg"
+            data-src="img/digital.jpg"
+            alt="Coach and Athlete"
+            class="goal__img coaches"
+          />
+          </div>
+          <div class="goal__feature">
+            <h5 class="goal__header">Connect with Coaches</h5>
+            <p>
+              Pace allows for coaches to see how their athletes training is going. Letting them see the atheletes training and how they felt about it. We want to make the commmunication gap between you and your athlete as small as possible.
+            </p>
+          </div>
+  
+          <div class="goal__feature">
+            <h5 class="goal__header">Connect with Teammates</h5>
+            <p>
+              Pace lets you see how your teammates are doing whether you are working out next to them or if you are away. We want you to feel just as connected to you team no matter the where you are in the world.
+            </p>
+          </div>
+          <img
+            src="teammates.jpg"
+            data-src="teammates.jpg"
+            alt="Teammates"
+            class="goal__img"
+          />
+  
+          <img
+            src="athletes.jpg"
+            data-src="athletes.jpg"
+            alt="Connect with athletes"
+            class="goal__img"
+          />
+          <div class="goal__feature">
+            <h5 class="goal__header">Connect with other athletes</h5>
+            <p>
+              Finally we want you to be able to connect with athletes from anywhere. Whether you live in the same town, race at the same meets, or just are inspired by their training, Pace allows for you to connect with everyone.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="section--2">
+        <div class="section__title">
+          <h2 class="section__description">Features</h2>
+          <h3 class="section__header feature__header">
+            Use Pace for an easy way of keeping up with your training. 
+          </h3>
+        </div>
+  
+        <div class="features">
+          <div class="features__tab-container">
+            <button
+              class="btn features__tab features__tab--1 features__tab--active"
+              data-tab="1"
+            >
+              <span>01</span>Log Your Workouts
+            </button>
+            <button class="btn features__tab features__tab--2" data-tab="2">
+              <span>02</span>See Friends Workouts
+            </button>
+            <button class="btn features__tab features__tab--3" data-tab="3">
+              <span>03</span>Get Coaches Feedback
+            </button>
+          </div>
+          <div
+            class="features__content features__content--1 features__content--active"
+          >
+          <div>
+          </div>
+            <h5 class="features__header">
+              Log your workouts manually or have them uploaded instantly.
+            </h5>
+            <p>
+              Pace allows you to be able to upload your workouts from your watch and instantly be able to edit the workout without difficulty. You can also manually log any workout with your notes and stats.
+            </p>
+          </div>
+  
+          <div class="features__content features__content--2">
+            <div>
+            </div>
+            <h5 class="features__header">
+              See workouts from your team, friends, or anyone else. 
+            </h5>
+            <p>
+              Pace allows you to scroll through workouts posted by your friends and teammates all on one page. You can comment on their workout or just view what they did for the day. 
+            </p>
+          </div>
+          <div class="features__content features__content--3">
+            <div>
+            </div>
+            <h5 class="features__header">
+              Get feedback from your coaches instantly.
+            </h5>
+            <p>
+              Pace allows your coach to easily see your workouts with all your stats and notes. They can leave feedback on your workout for you to see easier than ever.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section white--section" id="section--3">
+        <div class="section__title section__title--reviews">
+          <h2 class="section__description">Reach out!</h2>
+          <h3 class="section__header">
+            Leave a review or contact our team today.
+          </h3>
+        </div>
+  
+        <div class="slider">
+          <div class="slide slide--1">
+            <div class="review">
+              <h5 class="review__header">Best decision ever!</h5>
+              <blockquote class="review__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusantium quas quisquam non? Quas voluptate nulla minima
+                deleniti optio ullam nesciunt, numquam corporis et asperiores
+                laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus
+                id alias reiciendis, perferendis facere pariatur dolore veniam
+                autem esse non voluptatem saepe provident nihil molestiae.
+              </blockquote>
+              <address class="review__author">
+                <h6 class="review__name">Aarav Lynn</h6>
+                <p class="review__location">San Francisco, USA</p>
+              </address>
+            </div>
+          </div>
+  
+          <div class="slide slide--2">
+            <div class="review">
+              <h5 class="review__header">
+                Helped me reach my goals and track my progress!
+              </h5>
+              <blockquote class="review__text">
+                Quisquam itaque deserunt ullam, quia ea repellendus provident,
+                ducimus neque ipsam modi voluptatibus doloremque, corrupti
+                laborum. Incidunt numquam perferendis veritatis neque repellendus.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
+                deserunt exercitationem deleniti.
+              </blockquote>
+              <address class="review__author">
+                <h6 class="review__name">Miyah Miles</h6>
+                <p class="review__location">London, UK</p>
+              </address>
+            </div>
+          </div>
+  
+          <div class="slide slide--3">
+            <div class="review">
+              <h5 class="review__header">
+                Finally an app that connects me to other runners!
+              </h5>
+              <blockquote class="review__text">
+                Debitis, nihil sit minus suscipit magni aperiam vel tenetur
+                incidunt commodi architecto numquam omnis nulla autem,
+                necessitatibus blanditiis modi similique quidem. Odio aliquam
+                culpa dicta beatae quod maiores ipsa minus consequatur error sunt,
+                deleniti saepe aliquid quos inventore sequi. Necessitatibus id
+                alias reiciendis, perferendis facere.
+              </blockquote>
+              <address class="review__author">
+                <h6 class="review__name">Francisco Gomes</h6>
+                <p class="review__location">Lisbon, Portugal</p>
+              </address>
+            </div>
+          </div>
+          <button class="slider__btn slider__btn--left">&larr;</button>
+          <button class="slider__btn slider__btn--right">&rarr;</button>
+          <div class="dots"></div>
+        </div>
+      </section>
+
+      <section class="section section--sign-up">
+        <div class="section__title">
+          <h3 class="section__header">
+            Push your limits and find others doing the same. Join Pace today.
+          </h3>
+        </div>
+        <button class="btn btn--show-modal">Open your free account today!</button>
+      </section>
+
+      <div class="modal hidden">
+        <button class="btn--close-modal">&times;</button>
+        <h2 class="modal__header">
+          Join <span class="highlight">Pace</span> today and find your <span class="highlight">limits</span>
+        </h2>
+        <form class="modal__form">
+          <label>First Name</label>
+          <input type="text" />
+          <label>Last Name</label>
+          <input type="text" />
+          <label>Email Address</label>
+          <input type="email" />
+          <button class="btn">Next step &rarr;</button>
+        </form>
+      </div>
+      <div class="overlay hidden"></div>
+  </body>
+</html>

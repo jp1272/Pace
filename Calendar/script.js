@@ -220,7 +220,6 @@ class App {
 
     this.closeModal();
     this.renderCalendar();
-    console.log(duration);
   }
 
   showWorkout(wo, day) {

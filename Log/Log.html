@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pace.com</title>
+    <link rel="stylesheet" href="LogStyle.css" />
+    <script defer src="LogScript.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="../index.html">
+          <img
+            class="nav__logo"
+            src="../logo.png"
+            alt="Pace logo"
+            id="logo"
+            designer="JP"
+            data-version-number="3.0"
+          />
+        </a>
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="/Log/Log.html">Workout Log</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="/Calendar/Calendar.html"
+              >Calendar View</a
+            >
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="/Teams/Teams.html">Teams</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Sign in</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <ul class="workouts">
+      <button class="add-workout first">+ Add a new Workout +</button>
+      <!-- <li data-id="1234567890">
+        <div class="workout-div">
+          <h2 class="title">Workout Title</h2>
+          <p class="type">Workout Type</p>
+          <p class="stats">10 miles in 1:10:17 (7:10 pace)</p>
+          <p class="notes">
+            Notes: Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+            quis saepe obcaecati. At, et dolorem rerum deserunt debitis magni
+            non est ducimus facilis delectus animi reiciendis eaque velit
+            quisquam officiis!
+          </p>
+        </div>
+      </li> -->
+      <button class="add-workout2">+ Add a new Workout +</button>
+    </ul>
+    <div class="modal log hidden" id="event-modal">
+      <div class="modal-content">
+        <button class="btn--close-modal">&times;</button>
+        <h2>Add Workout</h2>
+        <form id="event-form" class="log__form">
+          <label for="event-date">Date:</label>
+          <input type="date" id="event-date" value="2025-03-22" required />
+
+          <label for="event-title">Workout Title:</label>
+          <input type="text" id="event-title" required />
+
+          <label for="event-type">Type of Workout:</label>
+          <select class="type" type="dropdown" id="event-type" required>
+            <option>Run</option>
+            <option>Walk</option>
+            <option>Bike</option>
+            <option>Swim</option>
+          </select>
+
+          <label for="event-distance">Distance:</label>
+          <div class="distance-inputs">
+            <input
+              type="number"
+              id="event-distance"
+              placeholder="Distance"
+              min="0"
+              step="0.5"
+            />
+            <select id="distance-unit">
+              <option value="miles">miles</option>
+              <option value="km">km</option>
+            </select>
+          </div>
+
+          <label for="event-duration">Duration:</label>
+          <div class="duration-inputs">
+            <input type="text" id="hours" placeholder="Hrs" maxlength="2" />
+            <span>:</span>
+            <input type="text" id="minutes" placeholder="Mins" maxlength="2" />
+            <span>:</span>
+            <input type="text" id="seconds" placeholder="Secs" maxlength="2" />
+          </div>
+
+          <label for="event-description">Workout Notes:</label>
+          <textarea class="notes" id="event-description"></textarea>
+
+          <button class="submit" type="submit">Save Workout</button>
+        </form>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>

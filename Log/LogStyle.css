@@ -1,0 +1,274 @@
+:root {
+  --color-primary: #5cb3d1;
+  --color-secondary: #06314a;
+  --color-tertiary: #a1a1a1;
+  --color-primary-darker: #428297;
+  --color-secondary-darker: #041e2d;
+  --gradient-primary: linear-gradient(
+    to top left,
+    var(--color-primary),
+    var(--color-primary-darker)
+  );
+  --gradient-secondary: linear-gradient(
+    to top left,
+    var(--color-tertiary),
+    #f8f8f8
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", sans-serif;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.9;
+  background-color: #f3f3f3;
+}
+
+html,
+body {
+  max-width: 100%;
+}
+
+/* NAVIGATION */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9rem;
+  width: 100vw;
+  padding: 0 6rem;
+  z-index: 100;
+  background-color: #fff;
+}
+
+.nav__logo {
+  height: 8rem;
+  transition: all 0.3s;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav__item {
+  margin-left: 4rem;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s;
+}
+
+.nav__link--btn:link,
+.nav__link--btn:visited {
+  padding: 0.8rem 2.5rem;
+  border-radius: 1rem;
+  background-color: var(--color-primary);
+  color: #222;
+}
+
+.nav__link--btn:hover,
+.nav__link--btn:active {
+  color: inherit;
+  background-color: var(--color-primary-darker);
+  color: #333;
+}
+
+.workouts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.workout-div {
+  width: 95vw;
+  height: 40vh;
+  border: 5px solid var(--color-secondary);
+  border-radius: 2rem;
+  background-color: var(--color-primary);
+  margin: 1rem;
+  padding: 5rem;
+}
+
+.title {
+  font-size: x-large;
+  color: var(--color-secondary);
+}
+
+.workout-type {
+  font-size: medium;
+  position: relative;
+  top: -4rem;
+  right: -110rem;
+}
+
+.stats {
+  font-size: medium;
+  color: var(--color-secondary-darker);
+  position: relative;
+  top: -2rem;
+}
+
+.workout-notes {
+  font-size: medium;
+  color: var(--color-secondary-darker);
+}
+
+.add-workout,
+.add-workout2 {
+  width: 15rem;
+  height: 2rem;
+  color: var(--color-primary);
+  border: none;
+  margin: 2rem;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.add-workout:hover {
+  color: var(--color-secondary-darker);
+  border-bottom: 2px solid var(--color-secondary-darker);
+}
+
+/* Hidden and Overlay */
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+/* Log Form */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: #f3f3f3;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  transform: translate(-50%, -50%);
+  max-width: 60rem;
+  padding: 5rem 6rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s;
+}
+
+.log {
+  width: 100%;
+  height: 90%;
+}
+
+.log__form {
+  margin: 0 3rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.log__form label {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.submit {
+  width: 20rem;
+  height: 5rem;
+  position: absolute;
+  top: 85%;
+  font-size: medium;
+}
+
+input,
+textarea,
+select {
+  margin: 1%;
+  width: 94%;
+  padding: 1rem 1.5rem;
+  font-size: 1.7rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+}
+
+select,
+textarea {
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+}
+
+.notes {
+  height: 100px;
+}
+
+.type {
+  height: 4rem;
+  font-size: medium;
+}
+
+.duration-inputs {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.distance-inputs {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.distance-inputs input {
+  width: 12rem;
+  text-align: right;
+}
+
+.distance-inputs select {
+  padding: 5px;
+  width: 30%;
+  height: 4rem;
+  font-size: medium;
+}
+
+.btn--close-modal,
+.close-workout-modal {
+  font-family: inherit;
+  color: inherit;
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
